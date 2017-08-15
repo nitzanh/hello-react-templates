@@ -1,0 +1,11 @@
+
+
+<div>
+    <form action="">
+        <div rt-repeat="input in Object.keys(this.state.inputs)">
+            <label>{input}</label>
+            <input type="text" onChange={this.createChangeHandler(input)}>
+        </div>
+
+    </form>
+</div>

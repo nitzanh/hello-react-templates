@@ -1,0 +1,6 @@
+<div>
+    <form action="">
+        <input type="text" onChange={this.onInputChange}>
+    </form>
+    <span>{this.state.name} makes ShaiK over-react</span>
+</div>

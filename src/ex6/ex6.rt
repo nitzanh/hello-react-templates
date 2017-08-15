@@ -1,0 +1,15 @@
+<div>
+    <form action="">
+        <label for="country">Select a country</label>
+        <select name="country" id="country" value={this.state.country} onChange={this.onCountryChange}>
+            <option disabled selected style="display: none"></option>
+            <option rt-repeat="country in this.getCountryNames()" value={country}>{country}</option>
+        </select>
+        <label for="city">and a city</label>
+        <select name="city" id="city" value={this.state.city} onChange={this.onCityChange}>
+            <option disabled selected style="display: none"></option>
+            <option rt-repeat="cityName in this.getCities(this.state.country)" value={cityName}>{cityName}</option>
+        </select>
+        <button type="submit" disabled={this.shouldDisableSubmit()}>Submit</button>
+    </form>
+</div>

@@ -1,0 +1,9 @@
+<div>
+    <form action="">
+        <label for="lat">lat</label>
+        <input type="number" id="lat" value={this.state.location.lat} onChange={this.createChangeHandler('lat')}>
+        <label for="long">long</label>
+        <input type="number" id="long" value={this.state.location.long} onChange={this.createChangeHandler('long')}>
+    </form>
+    <span>ShaiK is over-reacting at ({this.state.location.long},{this.state.location.lat})"</span>
+</div>
